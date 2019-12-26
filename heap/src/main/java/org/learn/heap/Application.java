@@ -18,7 +18,8 @@ public class Application {
     public static void main(String[] args) {
         Heap hp = new Heap();
         int[] arr = new int[]{1,7,8};
-        hp.isMaxHeap(arr);
-        hp.isMinHeap(arr);
+        //hp.isMaxHeap(arr);
+        //hp.isMinHeap(arr);
+        hp.convertArrayIntoBinaryTree(arr);
     }
 }

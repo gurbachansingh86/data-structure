@@ -60,4 +60,30 @@ public class Heap {
             System.out.println("Not Min heap data structure");
         }
     }
+
+
+    /**
+     *  Binary Tree Data Structure
+     *  A tree whose elements have at most 2 children is called a binary tree.
+     *  Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+     */
+    public void convertArrayIntoBinaryTree(int[] arr) {
+        if (arr.length == 0) {
+            System.out.println("Array is empty");
+        }
+        System.out.println("############## Print Tree ##############");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr.length > i) {
+                System.out.println("\t" + arr[i]);
+            }
+
+            if (arr.length > (2*i+1) ) {
+                System.out.println("\t" + arr[2*i+1]);
+            }
+
+            if (arr.length > (2*i+2)) {
+                System.out.println("\t" + arr[2*i+2]);
+            }
+        }
+    }
 }
